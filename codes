@@ -1,0 +1,10 @@
+void main(void)
+{
+    unsigned int i = 0x04, j = 0x05;
+    TRISB = 0;        // Set PORTB as output
+    LATB = 0;         // Clear PORTB
+
+    PORTB = i + j;    // Result
+    PORTC = i;        // First number
+    PORTD = j;        // Second number
+}
